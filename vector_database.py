@@ -44,4 +44,3 @@ FAISS_DB_PATH="vectorstore/db_faiss"
 faiss_db=FAISS.from_documents(text_chunks, get_embedding_model(ollama_model_name))
 faiss_db.save_local(FAISS_DB_PATH)
 
-print("✅ FAISS vector database created and saved at:", FAISS_DB_PATH)
